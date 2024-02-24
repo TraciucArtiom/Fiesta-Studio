@@ -1,0 +1,203 @@
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 800;
+  font-style: normal;
+  src: url("Fonts/bold/Montserrat-ExtraBold.ttf") format('truetype');
+}
+
+/* Обнуление стандартных стилей для различных элементов */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.left-section {
+  width: 19%;
+  height: 100%;
+  z-index: 1;
+}
+
+.left-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70vh;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0.6, 0.6, 0.6, 0.6), rgba(0.6, 0.6, 0.6, 0.6));
+  z-index: 0;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  color: yellow;
+}
+
+header {
+  position: absolute;
+  left: 280px;
+  top: 30px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+nav ul li a:hover {
+  color: #ffd700;
+}
+
+.Welcome {
+  position: absolute;
+  top: 240px;
+  left: 110px;
+  font-size: 35px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.Welcome2 {
+  position: absolute;
+  top: 340px;
+  left: 110px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.element {
+  position: absolute;
+  top: 130px;
+  left: 40px;
+}
+
+.RegLog {
+  position: absolute;
+  top: 200px;
+  left: 800px;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.RegLog form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 400px;
+}
+
+.RegLog label {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #7d7d7d;
+}
+
+.RegLog input {
+  width: 400px;
+  height: 40px;
+  padding: 8px;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #7d7d7d;
+  outline: none;
+}
+.REG{
+  position:absolute;
+  top:20%;
+  left:820px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+
+button{
+  color: #000000;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 8px;
+  height: 40px;
+  background-color: #ffd700;
+  position: center;
+  width:400px;
+}
+.link{
+  color: #7d7d7d;
+  font-size: 15px;
+  position:absolute;
+  top:300px
+}
+.Log{
+
+  position:absolute;
+  top:0px;
+  left:110px;
+}
+.Log a {
+  text-decoration: none;
+  
+  color: #000; /* Цвет по умолчанию */
+}
+
+.Log a:hover {
+  color: rgb(255, 187, 0); /* Цвет при наведении */
+}
+.Log ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+
+
+
+
+      
