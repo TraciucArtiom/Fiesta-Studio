@@ -8,10 +8,28 @@
     }
 
 
+    .logo{
+        height: 100px;
+        width: 100px;
+        border-radius: 100%;
+        background: white;
+        margin-left: 40px;
+    }
+    #bmenu{
+        display: none;
+        float: right;
+        background-color: #27272766;
+        padding: 10px;
+        margin-right: 10px;
+    }
+    #bt-bMenu{
+        margin-right: 10px;
+        display: none;
+    }
     .centered-section {
         width: 70%;
         margin: auto;
-        margin-top: 150px;
+        margin-top: 180px;
         margin-bottom: 200px;
         padding: 20px; 
         border-radius: 0;
@@ -236,6 +254,63 @@
     }
 
 
+    .work-with-us-1{
+        width: 70%;
+        margin: 200px auto;
+        border: 1px solid #FDDD0A;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .work-with-us-1-contact{
+        text-align: center;
+        font-size:25px;
+        font:bold;
+    }
+    .work-with-us-1-link-contact {
+        text-align: center;
+        color: #FDDD0A;
+        font-size:20px;
+    }
+    .work-with-us-1-link-contact:hover {
+        color: #fff;
+    }
+
+
+    .choice-of-services-section{
+        width: 70%;
+        margin: 200px auto;
+    }
+    .choice-of-services-title{
+        font-size: 50px;
+        font:bold;
+    }
+    .choice-of-services-subtitle{
+        margin-top: 50px;
+    }
+
+
+
+    .work-with-us-2-container{
+        padding: 20px 20px 30px 20px;
+        border: 0.5px solid #FDDD0A;
+        margin:auto;
+        margin-bottom: 100px;
+        width: 70%;
+    }
+    .work-with-us-2-contact{
+        font-size:20px;
+        font:bold;
+        text-align: center;
+    }
+    .work-with-us-2-link-contact {
+        text-align: center;
+        margin-top: 30px;
+        color: #FDDD0A;
+        font-size:20px;
+    }
+    .work-with-us-2-link-contact:hover {
+        color: #fff;
+    }
     .expirience{
         width: 70%;
         margin:auto;
@@ -360,7 +435,19 @@
     #b1-text{
         color: #FDDD0A;
     }
-
+    .contacts{
+        display: flex;
+    }
+    .contacts-info{
+        margin-left: 50px;
+    }
+    .contacts-info-title{
+        font-size: 35px;
+        margin-bottom: 15px;
+    }
+    .adress{
+        margin-bottom: 10px;
+    }
 
     ::-webkit-input-placeholder {
         color: white; /* Цвет плейсхолдера в вебкит-браузерах */
@@ -426,8 +513,8 @@
             height: 45px;
         }
         .why-part-container{
-            min-width: 280px;
             margin: 0;
+            width: 300px;
         }
         .why-second-line-container, .why-first-line-container{
             margin: auto;
@@ -462,6 +549,16 @@
             width: 40px;
             height: 40px;
         }
+        .contacts{
+            flex-direction: column;
+        }
+        .contacts-info{
+            margin: 0;
+        }
+        .map{
+            width: 100%;
+            margin-bottom: 20px;
+        }
     }
     @media (max-width: 820px){
         #servicesImg1{
@@ -489,6 +586,14 @@
         }
         .back{
             margin-left: 65%;
+        }
+    }
+    @media (max-width: 770px){
+        #nb-menu{
+            display: none;
+        }
+        #bt-bMenu{
+            display: block;
         }
     }
     @media (max-width: 650px){
@@ -546,10 +651,12 @@
             left: 90px ;
             top: -20px;
         }
-        .centered-section, .services-section, .album-section,.why-section,.expirience,.review-section,.contact-section{
+        .choice-of-services-section, .work-with-us-2-container, .work-with-us-1, .centered-section, .services-section, .album-section,.why-section,.expirience,.review-section,.contact-section{
             width: 90%;
             margin: 50px auto 100px auto;
-            padding: 0;
+        }
+        .centered-section{
+            margin-top: 110px;
         }
         .album-section{
             margin-top: 100px;

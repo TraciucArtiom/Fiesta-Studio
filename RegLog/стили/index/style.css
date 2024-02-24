@@ -1,118 +1,54 @@
-@font-face {
-  font-family: "Montserrat";
-  font-weight: 800;
-  font-style: normal;
-  src: url("Fonts/bold/Montserrat-ExtraBold.ttf") format('truetype');
-}
-
-/* Обнуление стандартных стилей для различных элементов */
-* {
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+  display: flex;
 }
 
 .left-section {
-  width: 19%;
-  height: 100%;
-  z-index: 1;
-}
-
-.left-section::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
+  height: 100vh;
   width: 70vh;
-  height: 100%;
-  background: linear-gradient(to right, rgba(0.6, 0.6, 0.6, 0.6), rgba(0.6, 0.6, 0.6, 0.6));
-  z-index: 0;
+  background-image:linear-gradient(to top, rgba(0, 0, 0, 0.499), rgba(0, 0, 0, 0.493)), url('../../../img/Image\ group1.png');
+  background-repeat: no-repeat;
 }
-
+.top{
+  display: flex;
+}
 .logo {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  font-size: 25px;
-  font-weight: bold;
-  color: yellow;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  background: white;
+  margin-left: 40px;
+  margin: 30px;
 }
-
 header {
-  position: absolute;
-  left: 280px;
-  top: 30px;
+  margin-top: 70px;
+  margin-left: 50px;
 }
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-nav ul li {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-nav ul li a {
+.header-links {
   text-decoration: none;
   color: #fff;
   font-weight: bold;
   font-size: 16px;
+  margin-right: 20px;
 }
-
-nav ul li a:hover {
+.header-links:hover {
   color: #ffd700;
 }
-
 .Welcome {
-  position: absolute;
-  top: 240px;
-  left: 110px;
+  margin-left: 50px;
+  margin-top: 200px;
   font-size: 35px;
   font-weight: bold;
   color: #fff;
 }
-
 .Welcome2 {
-  position: absolute;
-  top: 340px;
-  left: 110px;
+  margin-left: 50px;
+  margin-top: 30px;
+  margin-right: 30px;
   font-size: 18px;
   color: #fff;
 }
-
 .element {
   position: absolute;
   top: 130px;
@@ -120,30 +56,31 @@ nav ul li a:hover {
 }
 
 .RegLog {
-  position: absolute;
-  top: 200px;
-  left: 800px;
   font-size: 30px;
-  font-family: "Montserrat", sans-serif;
+  font-family: sans-serif;
   font-weight: bold;
-  padding: 20px;
+  margin: auto;
 }
-
-.RegLog form {
+.REG{
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  margin: auto;
+}
+#myForm {
   display: flex;
   flex-direction: column;
-  width: 400px;
+  width: 100%;
   height: 400px;
+  margin: auto;
 }
-
 .RegLog label {
   font-size: 14px;
   margin-bottom: 6px;
   color: #7d7d7d;
 }
-
 .RegLog input {
-  width: 400px;
+  width: 100%;
   height: 40px;
   padding: 8px;
   margin-bottom: 30px;
@@ -151,15 +88,6 @@ nav ul li a:hover {
   border-bottom: 1px solid #7d7d7d;
   outline: none;
 }
-.REG{
-  position:absolute;
-  top:20%;
-  left:820px;
-  font-weight: bold;
-  font-size: 30px;
-}
-
-
 button{
   color: #000000;
   cursor: pointer;
@@ -168,36 +96,62 @@ button{
   height: 40px;
   background-color: #ffd700;
   position: center;
-  width:400px;
+  width:100%;
 }
-.link{
+.qeustion{
   color: #7d7d7d;
   font-size: 15px;
-  position:absolute;
-  top:300px
 }
-.Log{
-
-  position:absolute;
-  top:0px;
-  left:110px;
-}
-.Log a {
+.logIn {
   text-decoration: none;
   
-  color: #000; /* Цвет по умолчанию */
+  color: #000;
+}
+.logIn:hover {
+  color: rgb(255, 187, 0);
 }
 
-.Log a:hover {
-  color: rgb(255, 187, 0); /* Цвет при наведении */
+@media (max-width: 1100px){
+  .left-section{
+    width: 50%;
+  }
 }
-.Log ul li {
-  display: inline-block;
-  margin-right: 10px;
+@media (max-width: 905px){
+  header{
+    margin-left: 10px;
+  }
 }
-
-
-
-
-
-      
+@media (max-width: 830px){
+  header{
+    margin-left: 5px;
+  }
+  .logo{
+    margin-left: 10px;
+  }
+}
+@media (max-width: 780px){
+  body{
+    flex-direction: column;
+  }
+  .Welcome{
+    margin-top: 40px;
+  }
+  .left-section{
+    width: 100%;
+    height: 50vh;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 390px){
+  .logo{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+  }
+  header{
+    margin-top: 60px;
+  }
+  .header-links{
+    margin-right: 5px;
+  }
+}
