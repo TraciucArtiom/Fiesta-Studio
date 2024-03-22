@@ -1,5 +1,3 @@
-
-
 const imagesData = [
     { src: 'videos/album1.mp4'},
     { src: 'videos/album2.mp4'},
@@ -56,21 +54,18 @@ function goToSlide(x){
 }
 function changeImages() {
     let imgCount = 0;
-    const albumColumns = document.querySelectorAll('.album-container > div');
-    albumColumns.forEach(column => {
-        const images = column.querySelectorAll('.album-vid');
-        images.forEach(img => {   
-            img.classList.add('animate-slide-out');
+    const images = document.querySelectorAll('.album-vid');
+    images.forEach(img => {   
+        img.classList.add('animate-slide-out');
+        setTimeout(() => {
+            const newImageData = imagesData[imgCount + slideCount*9];
+            imgCount += 1;
+            img.src = newImageData.src;
+            img.classList.remove('animate-slide-out');
+            img.classList.add('animate-slide-in');
             setTimeout(() => {
-                const newImageData = imagesData[imgCount + slideCount*9];
-                imgCount += 1;
-                img.src = newImageData.src;
-                img.classList.remove('animate-slide-out');
-                img.classList.add('animate-slide-in');
-                setTimeout(() => {
-                    img.classList.remove('animate-slide-in');
-                }, 500); // Длительность анимации в миллисекундах
-            }, 500); // Задержка перед сменой изображения в миллисекундах
-        });
+                img.classList.remove('animate-slide-in');
+            }, 500);
+        }, 500);
     });
 }

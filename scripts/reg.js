@@ -5,7 +5,7 @@ async function registration(event) {
     const password = document.getElementById('password').value;
 
     try {
-        const response = await fetch('http://localhost:3000/submit', {
+        const response = await fetch('http://localhost:3000/reg', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

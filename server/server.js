@@ -6,13 +6,13 @@ const path = require('path');
 const app = express();
 const port = 3000;
 
-// Подключение к базе данных SQLite
+// Подключение к базе данных
 const dbPath = path.resolve(__dirname, 'mydatabase.db');
 const sequelize = new Sequelize({
     dialect: 'sqlite',
     storage: dbPath,
     define: {
-        timestamps: false // Отключаем автоматическое добавление createdAt и updatedAt
+        timestamps: false
     }
 });
 
@@ -36,14 +36,14 @@ const User = sequelize.define('User', {
         allowNull: false
     }
 }, {
-    tableName: 'users' // Указываем имя таблицы в базе данных
+    tableName: 'users'
 });
 
 // Middleware для разрешения CORS
 app.use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*');
-    res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
-    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+    res.header('Access-Control-Allow-Methods', 'GET, POST');
+    res.header('Access-Control-Allow-Headers', 'Content-Type, Accept');
     next();
 });
 
@@ -51,12 +51,10 @@ app.use((req, res, next) => {
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// Обработка POST-запроса от формы
-app.post('/submit', async (req, res) => {
+// Обработка POST-запроса от форм
+app.post('/reg', async (req, res) => {
     try {
         const { username, email, password } = req.body;
-
-        // Сохранение данных в базе данных
         const newUser = await User.create({
             username: username,
             email: email,
@@ -70,13 +68,9 @@ app.post('/submit', async (req, res) => {
         res.status(500).json({ error: 'Internal Server Error' });
     }
 });
-
-// Обработка POST-запроса от формы входа
 app.post('/login', async (req, res) => {
     try {
         const { username, email, password } = req.body;
-
-        // Поиск пользователя в базе данных
         const user = await User.findOne({
             where: {
                 username: username,
@@ -95,7 +89,6 @@ app.post('/login', async (req, res) => {
         res.status(500).json({ error: 'Internal Server Error' });
     }
 });
-
 // Запуск сервера
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
