@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-    <script src="album.js"></script>
-    <script src="burgerMenu.js"></script>
-    <link href="style.css" rel="stylesheet">
+    <script src="scripts/album.js"></script>
+    <script src="scripts/burgerMenu.js"></script>
+    <link href="styles/style.css" rel="stylesheet">
     <title>Fiesta Studio</title>
     <link rel="icon" href="img/logo.png">
 
@@ -21,11 +21,11 @@
             <div class="flex justify-between pt-10">
                 <img src="img/logo.png" class="logo">
                 <div class="space-x-4 px-4 py-4 text-yellow-500" id="nb-menu">
-                    <a class="text-white text-l hover:text-yellow-500 focus:text-yellow-500" href="#">О нас</a>
+                    <a class="text-white text-l hover:text-yellow-500 focus:text-yellow-500" href="pages/about.html">О нас</a>
                     <a class="text-white text-l hover:text-yellow-500 focus:text-yellow-500" href="#album-section">Проекты</a>
                     <a class="text-white text-l hover:text-yellow-500 focus:text-yellow-500" href="#">Товары</a>
                     <a class="text-white text-l hover:text-yellow-500 focus:text-yellow-500" href="#contact-section">Контакты</a>
-                    <a href="RegLog/index.html" class="border border-white text-white hover:text-yellow-500 focus:text-yellow-500 font-bold py-1 px-2 focus:outline-none focus:shadow-outline-blue active:text-yellow-800 transform active:scale-95">
+                    <a href="pages/log.html" class="border border-white text-white hover:text-yellow-500 focus:text-yellow-500 font-bold py-1 px-2 focus:outline-none focus:shadow-outline-blue active:text-yellow-800 transform active:scale-95">
                         Войти в аккаунт ↗
                     </a>
                 </div>
@@ -36,13 +36,13 @@
                 <a class="text-white text-l hover:text-yellow-500 focus:text-yellow-500" href="#album-section">Проекты</a><br>
                 <a class="text-white text-l hover:text-yellow-500 focus:text-yellow-500" href="#">Товары</a><br>
                 <a class="text-white text-l hover:text-yellow-500 focus:text-yellow-500" href="#contact-section">Контакты</a><br>
-                <a href="RegLog/index.html" class="border border-white text-white hover:text-yellow-500 focus:text-yellow-500 font-bold py-1 px-2 focus:outline-none focus:shadow-outline-blue active:text-yellow-800 transform active:scale-95">
+                <a href="pages/log.html" class="border border-white text-white hover:text-yellow-500 focus:text-yellow-500 font-bold py-1 px-2 focus:outline-none focus:shadow-outline-blue active:text-yellow-800 transform active:scale-95">
                     Войти в аккаунт ↗
                 </a>
             </div>
         </header>
         <div class="centered-section">
-            <h2 class="text-7xl font-bold" id="main-title">Добро пожаловать</h2>
+            <h2 class="text-7xl font-bold" id="main-title">Добро пожаловать<br> на Fiesta Studio</h2>
             <p class="main-p">Мне всегда казалось, что создание магии на праздниках - это искусство<br> и Fiesta Studio подтвердили это
                 на практике!</p>
             <div class="round-btn" onclick="changeColor()">

@@ -74,12 +74,13 @@ app.post('/submit', async (req, res) => {
 // Обработка POST-запроса от формы входа
 app.post('/login', async (req, res) => {
     try {
-        const { username, password } = req.body;
+        const { username, email, password } = req.body;
 
         // Поиск пользователя в базе данных
         const user = await User.findOne({
             where: {
                 username: username,
+                email: email,
                 password: password
             }
         });

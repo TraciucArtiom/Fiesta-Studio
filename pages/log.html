@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style-reg-log.css">
+    <title>Fiesta Studio</title>
+    <link rel="icon" href="../img/logo.png">
+    <script src="../scripts/log.js"></script>
+</head>
+<body>
+    <div class="left-section">
+        
+        <div class="top">
+            <img src="../img/logo.png" alt="" class="logo">
+            <header>
+                <a href="#" class="header-links">О нас</a>
+                <a href="#" class="header-links">Контакты</a>
+                <a href="../index.html" class="header-links">Главная</a>
+            </header>
+        </div>
+        <div class="Welcome">Добро пожаловать</div>
+        <div class="Welcome2">
+            Мне всегда казалось, что создание маии на
+            праздниках - это искусство и Fiesta Studio
+            подтвердили это на практике!
+        </div>
+        <div class="element"><img src="../img/Element-reg-log.png" alt=""></div>
+    </div>
+    <div class="RegLog">
+        <h2 class="REG">Создать акаунт</h2>
+        <form id="myForm">
+            <label for="username"></label>
+            <input type="text" id="username" name="username" placeholder="Имя пользователя" required>
+            <label for="email"></label>
+            <input type="email" id="email" name="email" placeholder="Электронная почта" required>
+            <label for="password"></label>
+            <input class="password.input" type="password"  placeholder="пороль" id="password" name="password" required>
+            <button class="button"  onclick="login(event)">Войти</button>
+            <p class="qeustion">Нет аккаунта? <a href="reg.html" class="logIn">Зарегестрируйся</a></p>
+        </form>
+    </div>
+</body>
+</html>
