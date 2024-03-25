@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiesta Studio</title>
+    <meta name="description" content="От простых до роскошных украшений - наш ассортимент позволит вам создать волшебную атмосферу для любого события. 
+    Персонализируйте ваш праздник с помощью наших уникальных аксессуаров и декора.">
+    <meta name="keywords" content="Украшения для праздников, Праздничная атрибутика, Декорации для мероприятий, Праздничные украшения, 
+    Декор для праздника, Праздничные гирлянды, Свадебные украшения, Детские праздничные аксессуары, Шары и воздушные шарики, Праздничная посуда, 
+    Тематический декор, Украшение столов, Праздничные подарки, Мероприятий декораторы, Праздничный баллон с гелием, Тематические праздничные 
+    декорации, Праздничные аксессуары для вечеринок, Праздничные тематические костюмы, Украшения для корпоративных мероприятий, 
+    Праздничные аксессуары для домашних вечеринок, Декор для детских праздников, Праздничные аксессуары для торжеств, 
+    Праздничные украшения для садов и дворов,Декорации для новогодних и рождественских праздников, Праздничные гирлянды и флажки, 
+    Праздничные подарочные упаковки и ленты, Украшения для праздничных фотосессий, Праздничные аксессуары для фестивалей и мероприятий на открытом воздухе">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script src="scripts/album.js"></script>
+    <script src="scripts/burgerMenu.js"></script>
+    <script src="scripts/query.js"></script>
+    <script src="scripts/username.js"></script>
+    <link href="styles/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/futer.css">
+    <link rel="icon" href="img/logo.png">
+
+</head>
+
+<body class=" bg-mainColor text-white relative bg-black">
+    <div class="overlay">
+        <header class="container mx-0 relative z-10">
+            <div class="flex justify-between pt-10">
+                <img src="img/logo.png" class="logo">
+                <div class="space-x-4 px-4 py-4 text-yellow-500 flex" id="nb-menu">
+                    <a class="text-white text-l hover:text-yellow-500 focus:text-yellow-500 py-1" href="#expirience">О нас</a>
+                    <a class="text-white text-l hover:text-yellow-500 focus:text-yellow-500 py-1" href="#album-section">Проекты</a>
+                    <a class="text-white text-l hover:text-yellow-500 focus:text-yellow-500 py-1" href="#">Товары</a>
+                    <a class="text-white text-l hover:text-yellow-500 focus:text-yellow-500 py-1" href="#contact-section">Контакты</a>
+                    <a href="pages/log.html" id="username" class="border border-white text-white hover:text-yellow-500 focus:text-yellow-500 font-bold py-1 px-2 focus:outline-none focus:shadow-outline-blue active:text-yellow-800 transform active:scale-95">
+                            <div id="user-container">Войти в аккаунт ↗</div>
+                    </a>
+                </div>
+                <button onclick="b_m()" id="bt-bMenu">МЕНЮ</button>
+            </div>
+            <div id="bmenu">
+                <a class="text-white text-l hover:text-yellow-500 focus:text-yellow-500" href="#">О нас</a><br>
+                <a class="text-white text-l hover:text-yellow-500 focus:text-yellow-500" href="#album-section">Проекты</a><br>
+                <a class="text-white text-l hover:text-yellow-500 focus:text-yellow-500" href="#">Товары</a><br>
+                <a class="text-white text-l hover:text-yellow-500 focus:text-yellow-500" href="#contact-section">Контакты</a><br>
+                <a href="pages/log.html" id="username" class="border border-white text-white hover:text-yellow-500 focus:text-yellow-500 font-bold py-1 px-2 focus:outline-none focus:shadow-outline-blue active:text-yellow-800 transform active:scale-95">
+                    Войти в аккаунт ↗
+                </a>
+            </div>
+        </header>
+        <div class="centered-section">
+            <h2 class="text-7xl font-bold" id="main-title">Добро пожаловать<br> на Fiesta Studio</h2>
+            <p class="main-p">Мне всегда казалось, что создание магии на праздниках - это искусство<br> и Fiesta Studio подтвердили это
+                на практике!</p>
+            <div class="round-btn" onclick="changeColor()">
+                <h1>↓</h1>
+            </div>
+            <div class="Smotreti">
+                <p>Смотреть</p>
+            </div>
+        </div>
+        <div class="styleElement-1">
+            <img src="img/Element.png" alt="">
+        </div>
+        <div class="styleElement-2">
+            <img src="img/Ellipse1.png" alt="">
+        </div>
+        <div class="element2">
+            <img src="img/Ellipse2.png" alt="">
+        </div>
+
+        <section class="services-section">
+            <h2 class="services-title">Наши услуги:</h2>
+            <h1 class="services-second-title">Наши услуги:</h1>
+            <div class="services-content">
+                <img src="img/servicesImg1.jpg" alt="" id="servicesImg1">
+                <img src="img/servicesImg2.jpg" alt="" id="servicesImg2">
+                <ol class="services-list">
+                    <li class="service-item">
+                        Оформление дня рождения: Мы поможем сделать этот день особенным для вас или ваших близких,
+                            создав удивительную атмосферу с помощью шаров, украшений и тематических аксессуаров.
+                    </li>
+                    <li class="service-item">
+                        Свадебное оформление: Организация незабываемой свадьбы начинается с нас! Мы поможем создать
+                            романтическую обстановку, подчеркнуть уникальность вашего торжества и порадовать вас
+                            креативными идеями.
+                    </li>
+                    <li class="service-item">
+                        Оформление кумэтрии: Помимо праздничных мероприятий, мы заботимся о почтении памяти ушедших
+                            близких. Наша команда поможет создать достойную обстановку и поддержать вас в этот трудный
+                            момент.
+                    </li>
+                </ol>
+            </div>
+        </section>
+        <section class="album-section" id="album-section">
+            <h2 class="album-title">Наш Альбом:</h2>
+            <h1 class="album-second-title">Наш Альбом:</h1>
+            <div class="album-container">
+                <div class="album-column-1"> <!-- чет придумать тут для автопроизведения видео на которые наведен пользователь и поменять количество-->
+                    <video src="videos/album1.mp4" class="album-vid" autoplay muted></video>
+                    <video src="videos/album2.mp4" class="album-vid" autoplay muted></video>
+                    <video src="videos/album3.mp4" class="album-vid" autoplay muted></video>
+                </div>
+                <div class="album-column-2">
+                    <video src="videos/album4.mp4" class="album-vid" autoplay muted></video>
+                    <video src="videos/album5.mp4" class="album-vid" autoplay muted></video>
+                    <video src="videos/album6.mp4" class="album-vid" autoplay muted></video>
+                </div>
+                <div class="album-column-3">
+                    <video src="videos/album7.mp4" class="album-vid" autoplay muted></video>
+                    <video src="videos/album8.mp4" class="album-vid" autoplay muted></video>
+                    <video src="videos/album9.mp4" class="album-vid" autoplay muted></video>
+                </div>
+            </div>
+            <div class="controls">
+                <a class="a-controls" href="#album-section"><button class="this-album-slide" id="0" onclick="changeImages(), goToSlide(0)"></button></a>
+                <a class="a-controls" href="#album-section"><button class="album-slide" id="1" onclick="changeImages(), goToSlide(1)"></button></a>
+                <a class="a-controls" href="#album-section"><button class="album-slide" id="2" onclick="changeImages(), goToSlide(2)"></button></a>
+
+                <a class="a-controls-b" href="#album-section"><button class="back" onclick="changeImages(), back()"><p class="arc">←</p></button></a>
+                <a class="a-controls-f" href="#album-section"><button class="forward" onclick="changeImages(), forward()"><p class="arc">→</p></button></button></a>           
+            </div>
+        </section>
+        <section class="why-section">
+            <h2 class="why-title">6 причин, почему нужно<br> выбрать нас</h2>
+            <h1 class="why-second-title">Почему мы?</h1>
+            <div class="why-first-line-container">
+                <div class="why-part-container">
+                    <h2 class="why-part-title">Индивидуальный подход</h2>
+                    <p class="why-part-text">Мы учитываем каждую вашу идею и<br> создаем концепцию, отражающую<br> ваш уникальный стиль и вкус.</p>
+                </div>
+                <div class="why-part-container">
+                    <h2 class="why-part-title">Качество в каждой детали</h2>
+                    <p class="why-part-text">Мы используем только лучшие<br> материалы и аксессуары, чтобы<br> создать волшебную атмосферу для<br> вашего праздника.</p>
+                </div>
+                <div class="why-part-container">
+                    <h2 class="why-part-title">Опыт и профессионализм</h2>
+                    <p class="why-part-text">Наша команда специалистов с<br> огромным опытом готова<br> превратить ваши мечты в<br> реальность, обеспечивая<br> безупречное оформление<br> мероприятия.</p>   
+                </div>
+            </div>
+            <div class="why-second-line-container">
+                <div class="why-part-container">
+                    <h2 class="why-part-title">Широкий спектр услуг</h2>
+                    <p class="why-part-text">Мы заботимся о различных событиях - от дней рождения до свадеб и кумэтрии, чтобы сделать каждый из них особенным и запоминающимся.</p>
+                </div>
+                <div class="why-part-container">
+                    <h2 class="why-part-title">Творческий подход</h2>
+                    <p class="why-part-text">Мы не боимся экспериментировать и приносить новые идеи в оформление вашего праздника, делая его уникальным.</p>
+                </div>
+                <div class="why-part-container">
+                    <h2 class="why-part-title">Личное внимание и поддержка</h2>
+                    <p class="why-part-text">Мы всегда на связи, готовы выслушать ваши пожелания и помочь воплотить самые смелые идеи в жизнь, чтобы ваш праздник стал по-настоящему волшебным.</p>
+                </div>
+            </div>
+        </section>
+        <section class="work-with-us-1">
+            <div class="work-with-us-1-contact">
+                Свяжитесь с нами и мы ответим на все ваши вопросы!
+            </div>
+            <div class="work-with-us-1-link-contact">
+                <a href="#contact-section">Pаботайте с нами ➚</a>
+            </div>
+        </section> 
+        <section class="choice-of-services-section">
+            <div class="choice-of-services-title">Выбор услуг зависит от нескольких<br> ключевых факторов</div>
+          <div class="choice-of-services-subtitle"> <p>
+                1. Потребности и событие: Определите, какое событие вы планируете оформлять.<br>
+                   День рождения, свадьба, кумэтрия или что-то еще? Каждое из них требует<br>
+                   определенного подхода к декору и оформлению.<br>
+                2  Бюджет: Определите ваш бюджет на оформление мероприятия. Это поможет<br>
+                   узнать, какие услуги и в каком объеме вы можете себе позволить.<br>
+                3  Индивидуальные предпочтения: Учтите ваши личные предпочтения и стиль.<br> 
+                   Если у вас есть определенные темы, цвета или концепции, обязательно уточните<br>
+                   это при выборе услуги. <br>
+                3  Репутация и отзывы: Исследуйте репутацию компании или специалиста,<br>
+                   предоставляющего услугу. Посмотрите отзывы клиентов, примеры их работ,<br>
+                   чтобы убедиться в качестве предоставляемых услуг.<br>
+                4  Консультация: Не стесняйтесь обсудить свои пожелания и требования<br>
+                   непосредственно с представителями компании. Получите консультацию и<br>
+                   уточните все детали, чтобы быть уверенным в выборе.
+                </p>
+          </div>
+        </section>
+        <section class="work-with-us-2-container">
+            <div class="work-with-us-2-contact">Если у вас есть уникальный стиль который вы бы хотели видети на ваше события свяжитесь с нами</div>
+            <div class="work-with-us-2-link-contact"><a href="#contact-section">Свяжитесь с нами ➚</a></div>
+        </section>
+        <section class="expirience" id="expirience">
+            <h2 class="expirience-title">Наш опыт работы</h2>
+            <h1 class="expirience-second-title">Наш опыт работы</h1>
+            <p class="expirience-p">Мы работаем с разнообразными клиентами, стремясь понять их индивидуальные<br> 
+                пожелания и превратить их мечты в реальность. Наша команда имеет опыт работы с<br> 
+                различными стилями и темами, а также умение адаптироваться к уникальным<br> 
+                требованиям каждого заказчика.
+            </p>
+            <div class="exp1">
+                <h1 class="exp-title">10 лет</h1>
+                <h2>Оформления <br>праздников</h2>
+            </div>
+            <div class="exp2">
+                <h1 class="exp-title">7 лет</h1>
+                <h2 class="exp-p">Оформления <br>свадьб</h2>
+            </div>
+        </section>
+        <section class="review-section">
+            <h2 class="review-title">Отзывы</h2>
+            <h1 class="review-second-title">Отзывы</h1>
+            <div class="reviews">
+                <div class="review1">
+                    <h1 class="review-user">Иван Иваныч</h1>
+                    <p class="review-text">"Я в восторге от Fiesta Studio! Они создали 
+                        невероятную атмосферу на нашей свадьбе. 
+                        Каждая деталь была идеально продумана,
+                        атмосфера была волшебной. Они проявили
+                        индивидуальный подход к нашему торжеству 
+                        и воплотили наши мечты в реальность.
+                        Спасибо за незабываемый день!</p>
+                </div>
+                <div class="review1">
+                    <h1 class="review-user">Иван Иваныч</h1>
+                    <p class="review-text">"Я в восторге от Fiesta Studio! Они создали 
+                        невероятную атмосферу на нашей свадьбе. 
+                        Каждая деталь была идеально продумана,
+                        атмосфера была волшебной. Они проявили
+                        индивидуальный подход к нашему торжеству
+                        и воплотили наши мечты в реальность.
+                        Спасибо за незабываемый день!</p>
+                </div>
+                <div class="review1">
+                    <h1 class="review-user">Иван Иваныч</h1>
+                    <p class="review-text">"Я в восторге от Fiesta Studio! Они создали
+                        невероятную атмосферу на нашей свадьбе.
+                        Каждая деталь была идеально продумана,
+                        атмосфера была волшебной. Они проявили
+                        индивидуальный подход к нашему торжеству
+                        и воплотили наши мечты в реальность.
+                        Спасибо за незабываемый день!</p>
+                </div>
+            </div>
+            <p class="review-rew">Отзыв</p>
+            <input class="review-input" type="text" id="review-input">
+        </section>
+        <section class="contact-section" id="contact-section">
+            <div class="text"><h2>Контакты</h2></div>
+             <div class="contact-second-title">Контакты</div>
+             <div class="contacts">
+                <form action="#" method="post">
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="phone">Номер телефона:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <label for="message">Сообщение:</label>
+                    <input type="text" id="message" name="message" required>
+                    <button type="submit" id="b1" onclick="query(event)"><p id="b1-text">Отправить ➚</p></button>
+                </form>
+                <div class="contacts-info">
+                    <h2 class="contacts-info-title">Свяжитесь с нами</h2>
+                    <h2 class="tel">+37379608678 Елена</h2>
+                    <h2 class="adress">Strada 31 August 1989 13, MD-3909, Cahul, ↑ Второй этаж</h2>
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d316.51800738912044!2d28.19197893342808!3d45.90456959409835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sru!2s!4v1708801245848!5m2!1sru!2s" 
+                    width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+             </div>
+         </section>
+    </div>
+    <div class="footer">
+        <ul class="sci">
+          <li>
+            <a href="https://www.facebook.com/fiesta.studio.ch/"><img src="img/icon_facebook.png" alt=""></ion-icon></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/fiesta_studio.cahul/"><img src="img/icon_instagram.png" alt=""></a>
+          </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

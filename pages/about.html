@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script src="../scripts/burgerMenu.js"></script>
+    <link href="../styles/style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body class=" bg-mainColor text-white relative bg-black">
+    <div class="overlay">
+        <header class="container mx-0 relative z-10">
+            <div class="flex justify-between pt-10">
+                <img src="../img/logo.png" class="logo">
+                <div class="space-x-4 px-4 py-4 text-yellow-500" id="nb-menu">
+                    <a class="text-white text-l hover:text-yellow-500 focus:text-yellow-500" href="#">О нас</a>
+                    <a class="text-white text-l hover:text-yellow-500 focus:text-yellow-500" href="#album-section">Проекты</a>
+                    <a class="text-white text-l hover:text-yellow-500 focus:text-yellow-500" href="#">Товары</a>
+                    <a class="text-white text-l hover:text-yellow-500 focus:text-yellow-500" href="#contact-section">Контакты</a>
+                    <a href="log.html" class="border border-white text-white hover:text-yellow-500 focus:text-yellow-500 font-bold py-1 px-2 focus:outline-none focus:shadow-outline-blue active:text-yellow-800 transform active:scale-95">
+                        Войти в аккаунт ↗
+                    </a>
+                </div>
+                <button onclick="b_m()" id="bt-bMenu">МЕНЮ</button>
+            </div>
+            <div id="bmenu">
+                <a class="text-white text-l hover:text-yellow-500 focus:text-yellow-500" href="#">О нас</a><br>
+                <a class="text-white text-l hover:text-yellow-500 focus:text-yellow-500" href="#album-section">Проекты</a><br>
+                <a class="text-white text-l hover:text-yellow-500 focus:text-yellow-500" href="#">Товары</a><br>
+                <a class="text-white text-l hover:text-yellow-500 focus:text-yellow-500" href="#contact-section">Контакты</a><br>
+                <a href="RegLog/index.html" class="border border-white text-white hover:text-yellow-500 focus:text-yellow-500 font-bold py-1 px-2 focus:outline-none focus:shadow-outline-blue active:text-yellow-800 transform active:scale-95">
+                    Войти в аккаунт ↗
+                </a>
+            </div>
+        </header>
+</body>
+</html>
