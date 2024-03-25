@@ -15,6 +15,13 @@
         background: white;
         margin-left: 40px;
     }
+    #user-container{
+        min-width: 200px;
+        text-align: center;
+    }
+    #username{
+        height: 35px;
+    }
     #bmenu{
         display: none;
         float: right;

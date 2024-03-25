@@ -1,4 +1,3 @@
-
 function b_m(){
     var menu = document.getElementById("bmenu");
     if (menu.style.display == 'block') {
