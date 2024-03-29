@@ -1,6 +1,4 @@
 const imagesData = [
-    { src: 'videos/album1.mp4'},
-    { src: 'videos/album2.mp4'},
     { src: 'videos/album3.mp4'},
     { src: 'videos/album4.mp4'},
     { src: 'videos/album5.mp4'},
@@ -24,15 +22,14 @@ const imagesData = [
     { src: 'videos/album23.mp4'},
     { src: 'videos/album24.mp4'},
     { src: 'videos/album25.mp4'},
-    { src: 'videos/album26.mp4'},
-    { src: 'videos/album27.mp4'}
+    { src: 'videos/album26.mp4'}
 ];
 
 let slideCount = 0;
 function forward(){
     let button = document.getElementById(slideCount);
     button.className = "album-slide";
-    if(slideCount < 2) slideCount++;
+    if(slideCount < 3) slideCount++;
     else slideCount = 0;
     button = document.getElementById(slideCount);
     button.className = "this-album-slide";
@@ -41,7 +38,7 @@ function back(){
     let button = document.getElementById(slideCount);
     button.className = "album-slide";
     if(slideCount > 0) slideCount--;
-    else slideCount = 2;
+    else slideCount = 3;
     button = document.getElementById(slideCount);
     button.className = "this-album-slide";
 }
@@ -58,7 +55,7 @@ function changeImages() {
     images.forEach(img => {   
         img.classList.add('animate-slide-out');
         setTimeout(() => {
-            const newImageData = imagesData[imgCount + slideCount*9];
+            const newImageData = imagesData[imgCount + slideCount*6];
             imgCount += 1;
             img.src = newImageData.src;
             img.classList.remove('animate-slide-out');

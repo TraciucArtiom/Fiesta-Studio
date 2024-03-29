@@ -66,6 +66,25 @@ const Query = sequelize.define('Query', {
 }
 );
 
+const Comment = sequelize.define('Comment', {
+    id: {
+        type: DataTypes.INTEGER,
+        primaryKey: true,
+        autoIncrement: true
+    },
+    name: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    text: {
+        type: DataTypes.STRING,
+        allowNull: false
+    }
+}, {
+    tableName: 'comments'
+}
+);
+
 // Middleware для разрешения CORS
 app.use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*');
@@ -128,6 +147,29 @@ app.post('/query', async (req, res) => {
 
         console.log('Query added:', newQuery.toJSON());
         res.json({ message: 'Query added successfully' });
+    } catch (error) {
+        console.error(error.message);
+        res.status(500).json({ error: 'Internal Server Error' });
+    }
+});
+app.post('/add-comment', async (req, res) => {
+    try{
+        const {name, text} = req.body;
+        const newComment = await Comment.create({
+            name: name,
+            text: text
+        });
+        console.log('Comment added:', newComment.toJSON());
+        res.json({ message: 'Comment added successfully' });
+    } catch (error) {
+        console.error(error.message);
+        res.status(500).json({ error: 'Internal Server Error' });
+    }
+});
+app.post('/read-comments', async (req, res) => {
+    try {
+        const comments = await Comment.findAll();
+        res.json({ message: 'Comments read successfully', comments: comments });
     } catch (error) {
         console.error(error.message);
         res.status(500).json({ error: 'Internal Server Error' });
