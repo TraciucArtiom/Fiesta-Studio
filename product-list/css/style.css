@@ -1,0 +1,259 @@
+body {
+  background-image: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.315)), url('../../img/Image\ group1.png');
+  margin: 0;
+  width: 100%;
+  height: 106vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body {
+  background-color: var(--mainColor);
+  color: white;
+  position: relative;
+  background-color: black;
+}
+
+.overlay {
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
+.space-x-4 {
+  margin-right: 1rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.text-yellow-500 {
+  color: #f6e05e;
+}
+
+.text-white {
+  color: white;
+}
+
+.hover\:text-yellow-500:hover {
+  color: #f6e05e;
+}
+
+.focus\:text-yellow-500:focus {
+  color: #f6e05e;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.text-l {
+  font-size: 1.125rem;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-white {
+  border-color: white;
+}
+
+.hover\:border-white:hover {
+  border-color: white;
+}
+
+.focus\:border-white:focus {
+  border-color: white;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.focus\:shadow-outline-blue:focus {
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+}
+
+.active\:text-yellow-800:active {
+  color: #cbd5e0;
+}
+
+.transform {
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.active\:scale-95:active {
+  --tw-scale-x: 0.95;
+  --tw-scale-y: 0.95;
+}
+
+.logo{
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  background: white;
+  margin-left: 40px;
+}
+#user-container{
+  min-width: 200px;
+  text-align: center;
+}
+#username{
+  height: 35px;
+}
+#bmenu{
+  display: none;
+  float: right;
+  background-color: #27272766;
+  padding: 10px;
+  margin-right: 10px;
+}
+#bt-bMenu{
+  margin-right: 10px;
+  display: none;
+}
+.centered-section {
+  width: 70%;
+  margin: auto;
+  margin-top: 180px;
+  margin-bottom: 200px;
+  padding: 20px; 
+  border-radius: 0;
+}
+.styleElement-1{
+  position:absolute;
+  top: 250px;
+  left:1200px;
+  width: 150px;
+  height: 150px;
+}
+.styleElement-2{
+  position:absolute;
+  top:550px;
+  left:150px;
+  width:100px;
+  height:100px;
+
+}
+.element2{
+  position:absolute;
+  top:538px;
+  left:140px;
+  width:100px;
+  height:100px;
+}
+
+.title{
+  font-size: 5rem; 
+  font-weight: bold;
+  position:relative;
+  top:150px;
+  left:270px;
+}
+.title_2{
+  font-size: 4rem; 
+  font-weight: bold;
+  position:relative;
+  top:-70px;
+  left:150px;
+}
+.category-section{
+  width: 70%;
+  position:relative;
+  top:100px;
+  margin: 200px auto;
+}
+.category-title{
+  font-size: 40px;
+  font:bold;
+}
+.category-second-title{
+  font-size: 70px;
+  font:bold;
+  color: black;
+  -webkit-text-stroke-width: 0.2px;
+-webkit-text-stroke-color: white;
+}
+.category-first-line-container{
+  margin-top: 25px;
+  display: flex;
+}
+.category-second-line-container{
+  margin-top: 10px;
+  display: flex;
+}
+.category-part-container{
+  padding: 20px 20px 30px 20px;
+  border: 0.5px solid rgba(155, 155, 155, 0.76);
+  margin-right: 20px;
+  width: 350px;
+  height: 275px;
+}
+.category-part-title{
+  font:bold;
+  font-size: 30px;
+}
+.category-part-text{
+  margin-top: 15px;
+}
+.btn-alege{
+  font-size:30px;
+  font:bold;
+  position:relative;
+  top:76px;
+  left:-21px;
+  background-color: #ffd900;
+  width:350px;
+  color:black;
+  font:bold;
+}
+
+
