@@ -26,36 +26,38 @@ const imagesData = [
 ];
 
 let slideCount = 0;
+
 function forward(){
     let button = document.getElementById(slideCount);
-    button.className = "album-slide";
-    if(slideCount < 3) slideCount++;
+    //button.className = "album-slide";
+    let step = getStepSize();
+    console.log(step);
+    if(slideCount < 24/step-2) slideCount++;
     else slideCount = 0;
     button = document.getElementById(slideCount);
-    button.className = "this-album-slide";
+    //button.className = "this-album-slide";
+    changeImages();
 }
+
 function back(){
     let button = document.getElementById(slideCount);
-    button.className = "album-slide";
+    //button.className = "album-slide";
+    let step = getStepSize();
     if(slideCount > 0) slideCount--;
-    else slideCount = 3;
+    else slideCount = 24/step-2;
     button = document.getElementById(slideCount);
-    button.className = "this-album-slide";
+    //button.className = "this-album-slide";
+    changeImages();
 }
-function goToSlide(x){
-    let button = document.getElementById(slideCount);
-    button.className = "album-slide";
-    slideCount = x;
-    button = document.getElementById(slideCount);
-    button.className = "this-album-slide";
-}
+
 function changeImages() {
     let imgCount = 0;
-    const images = document.querySelectorAll('.album-vid');
+    let images = document.querySelectorAll('.album-vid');
+    let step = getStepSize();
     images.forEach(img => {   
         img.classList.add('animate-slide-out');
         setTimeout(() => {
-            const newImageData = imagesData[imgCount + slideCount*6];
+            const newImageData = imagesData[imgCount + slideCount*step];
             imgCount += 1;
             img.src = newImageData.src;
             img.classList.remove('animate-slide-out');
@@ -65,4 +67,10 @@ function changeImages() {
             }, 500);
         }, 500);
     });
+}
+
+function getStepSize() {
+    if(window.innerWidth <= 770) return 4;
+    else if(window.innerWidth <= 450) return 2;
+    else return 6;
 }

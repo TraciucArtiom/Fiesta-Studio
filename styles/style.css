@@ -122,7 +122,7 @@
     .services-second-title{
         font-size: 70px;
         font:bold;
-        color: black;
+        color: transparent;
         -webkit-text-stroke-width: 0.2px;
     -webkit-text-stroke-color: white;
     margin-bottom: 10px;
@@ -196,8 +196,12 @@
         justify-content: center;
     }
     .back{
-        margin-left: 80%;
-        margin-right: 20px;
+        margin-left: 10%;
+    }
+    .forward{
+        float: right;
+        margin-left: auto;
+        margin-right: 10%;
     }
     .back:hover, .forward:hover, .album-slide:hover{
         color: #f39d12;
@@ -219,7 +223,7 @@
     .controls{
         display: flex;
         flex-direction: row;
-        width: 95%;
+        width: 90%;
         margin: 10px auto;
     }
 
@@ -399,7 +403,10 @@
         margin-top: 20px;
         font-size: 20px;
     }
-
+    .review-controllers{
+        display: flex;
+        margin: 20px;
+    }
 
     .contact-section {
         width: 70%;
@@ -504,6 +511,9 @@
         }
     }
     @media (max-width: 1200px){
+        #main-title{
+            font-size: 7rem;
+        }
         .exp1{
             margin-top: 20px;
             left: 440px;
@@ -512,13 +522,6 @@
         .exp2{
             left: 500px ;
             top: -20px;
-        }
-        .back{
-            margin-left: 75%;
-        }
-        .forward, .back{
-            width: 45px;
-            height: 45px;
         }
         .why-part-container{
             margin: 0;
@@ -529,6 +532,9 @@
         }
     }
     @media (max-width: 1050px){
+        #main-title{
+            font-size: 6rem;
+        }
         .styleElement-1{
             left: 750px;
         }
@@ -547,11 +553,11 @@
         }
     }
     @media (max-width: 920px){
+        #main-title{
+            font-size: 5rem;
+        }
         .styleElement-1{
             display: none;
-        }
-        .back{
-            margin-left: 70%;
         }
         .forward, .back{
             width: 40px;
@@ -592,16 +598,19 @@
         .exp2{
             left: 200px ;
         }
-        .back{
-            margin-left: 65%;
-        }
     }
     @media (max-width: 770px){
+        #main-title{
+            font-size: 4rem;
+        }
         #nb-menu{
             display: none;
         }
         #bt-bMenu{
             display: block;
+        }
+        .album-column-1{
+            display: none;
         }
     }
     @media (max-width: 650px){
@@ -611,13 +620,6 @@
         #main-title{
             font-size: 53px;
         }
-        .back{
-            margin-left: 60%;
-        }
-        .forward, .back{
-            width: 35px;
-            height: 35px;
-        }
         .album-slide{
             width: 7px;
             height: 7px;
@@ -625,6 +627,11 @@
         .this-album-slide{
             width: 11px;
             height: 11px;
+        }
+    }
+    @media (max-width: 510px){
+        #main-title{
+            font-size: 3rem;
         }
     }
     @media (max-width: 450px) {
@@ -697,17 +704,6 @@
             padding: 5px;
             margin: 0;
         }
-        .back, .forward{
-            width: 20px;
-            height: 20px;
-        }
-        .back{
-            margin-left: 70%;
-            margin-right: 0;
-        }
-        .forward{
-            margin-left: 15px;
-        }
         .arc{
             top: -1px;
             font-size: 12px;
@@ -720,6 +716,9 @@
             width: 10px;
             height: 10px;
         }
+        .album-column-2, #vid-sec{
+            display: none;
+        }
     }
     @media (max-width: 375px) {
         #servicesImg1{
@@ -727,13 +726,5 @@
         }
         #servicesImg2{
             left: 30px;
-        }
-        .back{
-            margin-left: 60%;
-        }
-    }
-    @media (max-width: 320px) {
-        .back{
-            margin-left: 60%;
         }
     }

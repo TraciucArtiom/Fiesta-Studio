@@ -19,8 +19,10 @@ async function registration(event) {
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
-        else alert('вы зарегистрированы')
-
+        else{
+            localStorage.setItem('user', username);
+            window.location.href = "../index.html";
+        }
         const result = await response.json();
         console.log(result);
     } catch (error) {

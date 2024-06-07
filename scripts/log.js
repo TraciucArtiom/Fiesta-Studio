@@ -23,6 +23,7 @@ async function login(event) {
         }
         else{
             localStorage.setItem('user', username);
+            window.location.href = "../index.html";
         }
 
         const result = await response.json();
