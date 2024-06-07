@@ -25,37 +25,26 @@
 
 <body class=" bg-mainColor text-white relative bg-black">
     <div class="overlay">
-        <header class="mx-0 relative z-10">
-            <div class="flex justify-between pt-10">
+        <header class="fixed top-0 left-0 w-full mx-0 z-10 bg-gradient-to-b from-black to-transparent">
+            <div class="flex justify-between pt-10 px-4">
                 <img src="img/logo.png" class="logo">
-                <div class="space-x-4 px-4 py-4 text-yellow-500 flex" id="nb-menu">
-                    <a class="text-white text-l hover:text-yellow-500 focus:text-yellow-500 py-1" href="#expirience">О
-                        нас</a>
-                    <a class="text-white text-l hover:text-yellow-500 focus:text-yellow-500 py-1"
-                        href="#album-section">Проекты</a>
-                    <a class="text-white text-l hover:text-yellow-500 focus:text-yellow-500 py-1" href="#">Товары</a>
-                    <a class="text-white text-l hover:text-yellow-500 focus:text-yellow-500 py-1"
-                        href="#contact-section">Контакты</a>
-                    <a href="pages/log.html" id="username"
-                        class="border border-white text-white hover:text-yellow-500 focus:text-yellow-500 font-bold py-1 px-2 focus:outline-none focus:shadow-outline-blue active:text-yellow-800 transform active:scale-95">
+                <div class="space-x-4 text-yellow-500 flex" id="nb-menu">
+                    <a class="text-white text-l hover:text-yellow-500 focus:text-yellow-500 py-1" href="#expirience">О нас</a>
+                    <a class="text-white text-l hover:text-yellow-500 focus:text-yellow-500 py-1" href="#album-section">Проекты</a>
+                    <a class="text-white text-l hover:text-yellow-500 focus:text-yellow-500 py-1" href="#contact-section">Контакты</a>
+                    <a href="pages/log.html" id="username" class="border border-white text-white hover:text-yellow-500 focus:text-yellow-500 font-bold py-1 px-2 focus:outline-none focus:shadow-outline-blue active:text-yellow-800 transform active:scale-95">
                         <div id="user-container"></div>
                     </a>
                 </div>
                 <button onclick="b_m()" id="bt-bMenu">МЕНЮ</button>
             </div>
-            <div id="bmenu">
-                <a class="text-white text-l hover:text-yellow-500 focus:text-yellow-500" href="#expirience">О
-                    нас</a><br>
-                <a class="text-white text-l hover:text-yellow-500 focus:text-yellow-500"
-                    href="#album-section">Проекты</a><br>
-                <a class="text-white text-l hover:text-yellow-500 focus:text-yellow-500" href="#">Товары</a><br>
-                <a class="text-white text-l hover:text-yellow-500 focus:text-yellow-500"
-                    href="#contact-section">Контакты</a><br><br>
-                <a href="pages/log.html" id="user-container-bg"
-                    class="border border-white text-white hover:text-yellow-500 focus:text-yellow-500 font-bold py-1 px-2 focus:outline-none focus:shadow-outline-blue active:text-yellow-800 transform active:scale-95">
+            <div id="bmenu" class="hidden px-4">
+                <a class="text-white text-l hover:text-yellow-500 focus:text-yellow-500" href="#expirience">О нас</a><br>
+                <a class="text-white text-l hover:text-yellow-500 focus:text-yellow-500" href="#album-section">Проекты</a><br>
+                <a class="text-white text-l hover:text-yellow-500 focus:text-yellow-500" href="#contact-section">Контакты</a><br><br>
+                <a href="pages/log.html" id="user-container-bg" class="border border-white text-white hover:text-yellow-500 focus:text-yellow-500 font-bold py-1 px-2 focus:outline-none focus:shadow-outline-blue active:text-yellow-800 transform active:scale-95">
                 </a>
             </div>
-
         </header>
         <div class="centered-section">
             <h2 class="text-9xl font-bold" id="main-title">Fiesta Studio</h2>
@@ -128,16 +117,25 @@
                     <h2 class="why-part-title">Индивидуальный подход</h2>
                     <p class="why-part-text">Мы учитываем каждую вашу идею и создаем концепцию, отражающую ваш
                         уникальный стиль и вкус.</p>
+                        <div class= Shape>
+                            <img src="img/Shape.png" alt="">
+                        </div>
                 </div>
                 <div class="why-part-container">
                     <h2 class="why-part-title">Качество в каждой детали</h2>
                     <p class="why-part-text">Мы используем только лучшие материалы и аксессуары, чтобы создать
                         волшебную атмосферу для вашего праздника.</p>
+                        <div class= Shape-1>
+                            <img src="img/Shape.png" alt="">
+                        </div>
                 </div>
                 <div class="why-part-container">
                     <h2 class="why-part-title">Опыт и профессионализм</h2>
                     <p class="why-part-text">Наша команда специалистов с огромным опытом готова превратить ваши
                         мечты в реальность, обеспечивая безупречное оформление мероприятия.</p>
+                        <div class= Shape-2>
+                            <img src="img/Shape.png" alt="">
+                        </div>
                 </div>
             </div>
             <div class="why-second-line-container">
@@ -145,16 +143,25 @@
                     <h2 class="why-part-title">Широкий спектр услуг</h2>
                     <p class="why-part-text">Мы заботимся о различных событиях - от дней рождения до свадеб и кумэтрии,
                         чтобы сделать каждый из них особенным и запоминающимся.</p>
+                        <div class= Shape-3>
+                            <img src="img/Shape.png" alt="">
+                        </div>
                 </div>
                 <div class="why-part-container">
                     <h2 class="why-part-title">Творческий подход</h2>
                     <p class="why-part-text">Мы не боимся экспериментировать и приносить новые идеи в оформление вашего
                         праздника, делая его уникальным.</p>
+                        <div class= Shape-4>
+                            <img src="img/Shape.png" alt="">
+                        </div>
                 </div>
                 <div class="why-part-container">
                     <h2 class="why-part-title">Личное внимание и поддержка</h2>
                     <p class="why-part-text">Мы всегда на связи, готовы выслушать ваши пожелания и помочь воплотить
                         самые смелые идеи в жизнь, чтобы ваш праздник стал по-настоящему волшебным.</p>
+                        <div class= Shape-5>
+                            <img src="img/Shape.png" alt="">
+                        </div>
                 </div>
             </div>
         </section>
