@@ -16,7 +16,7 @@ const sequelize = new Sequelize({
     }
 });
 
-// Определение модели пользователя
+// Определение моделей
 const User = sequelize.define('User', {
     id: {
         type: DataTypes.INTEGER,
