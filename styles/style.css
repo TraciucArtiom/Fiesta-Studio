@@ -11,8 +11,8 @@
         width: 100%;
     }
     .logo{
-        height: 100px;
-        width: 100px;
+        height: 80px;
+        width: 80px;
         border-radius: 100%;
         background: white;
         margin-left: 40px;
@@ -38,15 +38,15 @@
     .centered-section {
         width: 70%;
         margin: auto;
-        margin-top: 180px;
-        margin-bottom: 200px;
+        margin-top: 250px;
+        margin-bottom: 300px;
         padding: 20px; 
         border-radius: 0;
     }
     .styleElement-1{
-        position:absolute;
-        top: 250px;
-        left:1200px;
+        position:relative;
+        top: -250px;
+        left:900px;
         width: 150px;
         height: 150px;
     }
@@ -495,7 +495,7 @@
     }
     @media (max-width: 1350px){
         .styleElement-1{
-            left: 900px;
+            left: 700px;
         }
         #servicesImg1{
             width: 330px;
@@ -536,7 +536,7 @@
             font-size: 6rem;
         }
         .styleElement-1{
-            left: 750px;
+            left: 600px;
         }
         #servicesImg1{
             width: 300px;
@@ -614,17 +614,24 @@
             top: 100%;
             left: 0;
             width: 100%;
-            z-index: 20;
+            z-index: 20;    
         }
         #bmenu a {
             display: block;
             padding: 10px;
             text-align: center;
         }
+        .album-column-1{
+            display: none;
+        }
     }
     @media (max-width: 650px){
         .reviews{
             flex-direction: column;
+        }
+        .review1{
+            text-align: center;
+            width: 95%;
         }
         #main-title{
             font-size: 53px;
@@ -680,7 +687,8 @@
             margin: 50px auto 100px auto;
         }
         .centered-section{
-            margin-top: 110px;
+            margin-top: 250px;
+            margin-bottom: 250px;
         }
         .album-section{
             margin-top: 100px;

@@ -29,24 +29,20 @@ let slideCount = 0;
 
 function forward(){
     let button = document.getElementById(slideCount);
-    //button.className = "album-slide";
     let step = getStepSize();
     console.log(step);
     if(slideCount < 24/step-2) slideCount++;
     else slideCount = 0;
     button = document.getElementById(slideCount);
-    //button.className = "this-album-slide";
     changeImages();
 }
 
 function back(){
     let button = document.getElementById(slideCount);
-    //button.className = "album-slide";
     let step = getStepSize();
     if(slideCount > 0) slideCount--;
     else slideCount = 24/step-2;
     button = document.getElementById(slideCount);
-    //button.className = "this-album-slide";
     changeImages();
 }
 

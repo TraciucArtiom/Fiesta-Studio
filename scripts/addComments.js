@@ -19,7 +19,7 @@ async function addComment(event) {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
-    
+            document.getElementById('review-input').value = "";
             const result = await response.json();
             console.log(result);
         } catch (error) {
