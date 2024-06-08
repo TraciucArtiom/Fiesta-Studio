@@ -599,18 +599,27 @@
             left: 200px ;
         }
     }
-    @media (max-width: 770px){
-        #main-title{
-            font-size: 4rem;
-        }
-        #nb-menu{
+    @media (max-width: 770px) {
+        #nb-menu {
             display: none;
         }
-        #bt-bMenu{
+        #bt-bMenu {
             display: block;
         }
-        .album-column-1{
+        #bmenu {
             display: none;
+            flex-direction: column;
+            background: linear-gradient(to top,  rgb(0, 0, 0), rgba(0, 0, 0, 0.03));
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            z-index: 20;
+        }
+        #bmenu a {
+            display: block;
+            padding: 10px;
+            text-align: center;
         }
     }
     @media (max-width: 650px){
